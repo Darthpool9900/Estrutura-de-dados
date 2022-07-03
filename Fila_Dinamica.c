@@ -100,7 +100,7 @@ int main(){
             printf("\n==================================================");
             printf("\n||                 1-Inserir                    ||");
             printf("\n||                 2-Remover                    ||");
-            printf("\n||               3-Mostrar topo                 ||");
+            printf("\n||               3-Mostrar Frente               ||");
             printf("\n||              4-Listar todos                  ||");
             printf("\n||          5-Verifica se está vazia            ||");
             printf("\n||                  6-Sair                      ||");
