@@ -43,7 +43,13 @@ void pop(){
 
 
 void topoPilha(){
+    if(pilha== NULL){
+        printf("\n==================================================");
+        printf("\n||                PILHA VAZIA                   ||");
+        printf("\n==================================================\n");
+    }else{
         printf("Topo:%d\n",pilha -> dado);
+    }
 }
 
 void imprime(struct dados *tpilha){
