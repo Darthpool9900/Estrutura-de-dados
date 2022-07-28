@@ -58,7 +58,7 @@ void busca(int i){
                 printf("\n==============================");
                 return;
             }
-            if(i>raiz->dado){
+            else if(i>raiz->dado){
                     raiz = raiz ->dir;
             }else{
                 raiz = raiz ->esq;
