@@ -76,13 +76,7 @@ int main(){
     int resp;
     int valor;
     struct no *ref;
-     printf("\n================================================");
-        printf("\n||                1-Inserir                   ||");
-        printf("\n||                2-busca                     ||");
-        printf("\n||            3-Imprimir em ordem             ||");
-        printf("\n================================================");
-
-        scanf("%d",&resp);
+     resp=0;
     while(resp<=4){
         printf("\n================================================");
         printf("\n||                1-Inserir                   ||");
@@ -90,7 +84,7 @@ int main(){
         printf("\n||            3-Imprimir em ordem             ||");
         printf("\n||                4-sair                      ||");
 
-        printf("\n================================================");
+        printf("\n================================================\n");
 
         scanf("%d",&resp);
         if(resp==1){
