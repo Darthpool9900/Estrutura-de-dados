@@ -1,3 +1,9 @@
+//P10050822 - Prática 10/ Algoritmos de Ordenação
+//Estrutura de Dados I - Prof. Albino Szesz Jr.
+//Aluno Rafael Zachesky de Oliveira RA: 21010026
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
