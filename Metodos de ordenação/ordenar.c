@@ -1,9 +1,6 @@
 //P10050822 - Prática 10/ Algoritmos de Ordenação
 //Estrutura de Dados I - Prof. Albino Szesz Jr.
 //Aluno Rafael Zachesky de Oliveira RA: 21010026
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -318,10 +315,10 @@ int main(){
         printf("Quer ordenar uma lista?[S/N]: ");
         scanf("%c", &opcao);
 
-        if(opcao == 's' || opcao == 'S'){
+        if(opcao == 's' || opcao == 'S'){//Compara caracteres para continuar o procedimento
             system("cls");
             ordenaLista();
-        }else if(opcao == 'n' || opcao == 'N'){
+        }else if(opcao == 'n' || opcao == 'N'){//Compara caracteres para continuar o procedimento
             printf("\nSaindo...\n");
             return 0;
         }else{

@@ -1,0 +1,1 @@
+Essas opões de escolha dependem de sua hardware portanto pode ser que haja travamentos e perda de desempenho durante a execução do programa
