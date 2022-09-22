@@ -83,7 +83,6 @@ int main(){
         printf("\n||                2-busca                     ||");
         printf("\n||            3-Imprimir em ordem             ||");
         printf("\n||                4-sair                      ||");
-
         printf("\n================================================\n");
 
         scanf("%d",&resp);
