@@ -1,3 +1,8 @@
+//P10050822 - Prática 1/ Grafos
+//Estrutura de Dados II - Prof. Albino Szesz Jr.
+//Aluno Rafael Zachesky de Oliveira RA: 21010026
+
+
 #include<stdio.h>
 #include<locale.h>
 #include<conio.h>
@@ -57,9 +62,6 @@ void imprimeGrafo(){//Imprime o grafo completo
         for(j=0;j<TAM;j++){
         if(matriz_adj[i][j]==1){
             printf("\nInicio:%d,Fim:%d",vertice[i],vertice[j]);
-        }else{
-            printf("\nVetores ou Grafo inexistente");
-            return;
         }
         }
     }
@@ -86,18 +88,25 @@ void removeAresta(int val_init,int val_destiny){
     printf("\nRemovido");
 }
 void verificaAresta(int val_init,int val_destiny){
-    int i,j;//Declaração de variáveis auxiliares
-    for( i=0;i<TAM;i++){
-        for(j=0;j<TAM;j++){
-            if(matriz_adj[i][j]<=0){//Verifica se os vertices existem
-                printf("\nNão encontrado");
-                return;
-            }else{
-                printf("\nEncontrado");
-                return;
-            }
-        }
-}
+    
+    int aux1 = -1, aux2 = -1,i;
+
+    for(i = 0; i < cont; i++){
+        if(val_init == vertice[i])
+            aux1 = i;
+        if(val_destiny == vertice[i])
+            aux2 = i;
+    }
+
+    if(aux1 == -1 || aux2 == -1){
+        printf("Vertice nao encontrado!\n");
+        return;
+    }
+
+    if(matriz_adj[aux1][aux2] == 1)
+        printf("Ha uma aresta entre os vertices %d e %d\n", vertice[aux1], vertice[aux2]);
+    else
+        printf("Nao ha uma aresta entre os vertices %d e %d\n", vertice[aux1], vertice[aux2]);
 }
 
 int main(){
