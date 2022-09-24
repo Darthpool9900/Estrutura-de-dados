@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<locale.h>
 #include<conio.h>
@@ -37,7 +38,7 @@ void insereVertice(int val){//Insere valores dentro dos grafos
 
 void inserirAresta(int val_init,int val_destiny){//Insere dois vertices sendo o primeiro o valor inicial e o segundo o valor de destino
     int i,aux_move=-1,aux_ret=-1;//Declaração de variáveis auxiliares
-    for( i=0;i<TAM;i++){
+    for( i=0;i<cont;i++){
         if(vertice[i]==val_init){
             aux_move=i;
         }
@@ -47,6 +48,11 @@ void inserirAresta(int val_init,int val_destiny){//Insere dois vertices sendo o 
     }
     if(aux_move==-1||aux_ret==-1){//Verifica se os vertices existem
         printf("Vetor não encontrado");
+        return;
+    }
+    if(matriz_adj[aux_move][aux_ret]==-1||matriz_adj[aux_ret][aux_move]==1){
+        printf("\nAresta inválida");
+        return;
     }
     matriz_adj[aux_move][aux_ret]=1;
 }
@@ -114,8 +120,10 @@ int main(){
         printf("\n||              3-Remover aresta              ||");
         printf("\n||              4-Imprimir                    ||");
         printf("\n||         5-Verifica se existe aresta        ||");
+        printf("\n||              6-Finalizar                   ||");
         printf("\n================================================");
-        scanf("\n%d",&leitor);
+        printf("\nResposta:");
+        scanf("%d",&leitor);
         if(leitor==1){
             Refresh();
             for(i=0;i<TAM;i++){
