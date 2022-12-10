@@ -1,6 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
-        "conio.h": "c"
+        "conio.h": "c",
+        "time.h": "c"
     }
 }
